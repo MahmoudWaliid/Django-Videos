@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App</title>
+    <style>
+        body {
+            font-family: 'cairo', sans-serif;
+            background-color: #dfdfdf;
+            margin: 15px;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        header {
+            background-color: #636363;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        footer {
+            background-color: #636363;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+        h2 {
+            margin: 0;
+            font-size: 32px;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        p {
+            margin: 0;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Welcome</h2>
+        </header>
+        <main>
+            {% block content %}
+
+            {% endblock %}
+        </main>
+        <footer>
+            <p>Goodbye</p>
+        </footer>
+    </div>
+</body>
+</html>

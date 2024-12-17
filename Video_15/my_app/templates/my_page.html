@@ -1,0 +1,14 @@
+{% block content %}
+
+<form action="/start" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Start">
+</form>
+
+<h1>{{ output1 }}</h1>
+<h2>{{ output2 }}</h2>
+<h3>{{ output3 }}</h3>
+<h4>{{ output4 }}</h4>
+
+{% endblock %}

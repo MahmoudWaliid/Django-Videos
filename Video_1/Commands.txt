@@ -1,0 +1,10 @@
+• pip install virtualenv
+• virtualenv Virtual_Environment
+• cd Virtual_Environment/Scripts
+• activate
+• pip install django
+• cd ../../
+• django-admin startproject Video_1
+• cd Video_1
+• python manage.py runserver
+• You can access the server at http://127.0.0.1:8000/.

@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+{% block content %}
+<form action="/testo" method="post">
+    {% csrf_token %}
+    {% for form in forms %}
+    {{ form.as_p }}
+    {% endfor %}
+    <input type="submit" value="Calc">
+</form>
+<h1> {{ o }} </h1>
+{% endblock %}
